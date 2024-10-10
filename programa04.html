@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Numero Secreto I </title>
+</head>
+<body>
+    <script>
+        function mostrar(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
+        let numeroSecreto = 5
+
+        let chute = prompt('Qual o número estou pensando de 1 a 10?')
+
+        if(chute == numeroSecreto){
+            mostrar('Parabéns, Você acetou!')
+        } else{
+            mostrar('Você errou!')
+        }
+
+        //if(chute != numeroSecreto) -> != é o sinal diferente
+    </script>
+    
+</body>
+</html>
