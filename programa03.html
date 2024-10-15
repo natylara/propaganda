@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sistema de pontuação </title>
+</head>
+<body>
+    <script>
+         function pulaLinha() {
+            document.write('<br>')
+        }
+
+        function mostrar(texto) {
+            document.write(texto)
+            pulaLinha()
+        }
+
+        const medalhasOuro = prompt('Quantas medalhas de ouro você ganhou?')
+        const medalhasPrata = prompt('Quantas medalhas de prata você ganhou?')
+        const medalhasBronze = prompt('Quantas medalhas de Bronze você ganhou?')
+        const provasNadadas = prompt('Quantas provas você nadou?')
+
+        let pontos = (medalhasOuro * 5) + (medalhasPrata * 3) + (medalhasBronze * 2) + parent(provasNadadas)
+
+        mostrar(' O total de pontos que você fez nessa temporada doi de: ${pontos}')
+
+        if(pontos > 30){
+            mostrar('Você conquistou o trdeoféu de 1º LUGAR!!')
+        } else if(pontos == 30){
+            mostrar('Você conquistou o troféu de 2º LUGAR!!')
+        } else if(pontos <30 && pontos > 25){ 
+            mostrar('Você conquistou o troféu de 3º LUGAR!!')
+        }else {
+            mostrar('Sua participação no nosso campeonato foi muito importante!!')
+        }
+            
+     
+    </script>
+     
+</body>
+</html> 

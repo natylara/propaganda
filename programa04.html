@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Numero Secreto I </title>
+    <title> Número secreto I </title>
 </head>
 <body>
     <script>
+          function pulaLinha() {
+            document.write('<br>')
+        }
+
         function mostrar(texto){
             document.write(texto)
             pulaLinha()
         }
-
+        
         let numeroSecreto = 5
 
         let chute = prompt('Qual o número estou pensando de 1 a 10?')
 
         if(chute == numeroSecreto){
-            mostrar('Parabéns, Você acetou!')
+            mostrar('Parabéns, Você acertou!')
         } else{
-            mostrar('Você errou!')
+            mostrar(`Você errou, o número secreto é`${numeroSecreto})
         }
 
-        //if(chute != numeroSecreto) -> != é o sinal diferente
+        //if(chute != numeroSecreto) -> != é o sinal diferente 
     </script>
     
 </body>
