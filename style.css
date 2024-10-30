@@ -51,9 +51,35 @@ header h1{
 .cartao{
     text-decoration: none;
     color: var(--cor1);
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a{
     text-decoration: none;
     color: var(--cor2);
+}
+
+.principal-numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.numero-input{
+    font-size: 2em;
+    padding: 1em;
+}
+.numero-botao{
+    margin-left: 1em;
+    font-size: 1em;
+    padding: 1em;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    border-radius: 15px;
 }
