@@ -54,6 +54,10 @@ header h1{
 
 }
 
+.ultimo-cartao a{
+    margin-bottom: 0.5em;
+}
+
 footer{
     position: fixed;
     bottom: 0;
